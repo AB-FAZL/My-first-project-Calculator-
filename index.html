@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/ef02506a6d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="Calculator">
+      <div class="frame">
+        <input type="text" id="frame" />
+      </div>
+      <div class="Buttons">
+        <div class="row">
+          <button onclick="c()">CE</button>
+          <button onclick="delete_()">
+            <i
+              class="fa-solid fa-delete-left"
+            ></i>
+          </button>
+        </div>
+        <div class="row">
+          <button onclick="reverce()">1/x</button>
+          <button onclick="power_2()">x^2</button>
+          <button onclick="root()">
+            <i
+              class="fa-solid fa-square-root-variable"
+            ></i>
+          </button>
+          <button onclick="appendToFrame('/')">
+            <i class="fa-solid fa-divide"></i>
+          </button>
+        </div>
+        <div class="row">
+          <button onclick="appendToFrame('7')">
+            7
+          </button>
+          <button onclick="appendToFrame('8')">
+            8
+          </button>
+          <button
+            id="9"
+            onclick="appendToFrame('9')"
+          >
+            9
+          </button>
+          <button onclick="appendToFrame('*')">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="row">
+          <button onclick="appendToFrame('4')">
+            4
+          </button>
+          <button onclick="appendToFrame('5')">
+            5
+          </button>
+          <button onclick="appendToFrame('6')">
+            6
+          </button>
+          <button onclick="appendToFrame('-')">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+        </div>
+        <div class="row">
+          <button onclick="appendToFrame('1')">
+            1
+          </button>
+          <button onclick="appendToFrame('2')">
+            2
+          </button>
+          <button onclick="appendToFrame('3')">
+            3
+          </button>
+          <button onclick="appendToFrame('+')">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <div class="row">
+          <button onclick="pm()">
+            <i class="fa-solid fa-plus-minus"></i>
+          </button>
+          <button onclick="appendToFrame('0')">
+            0
+          </button>
+          <button
+            id="dot"
+            onclick="appendToFrame('.')"
+          >
+            <i class="fa-solid fa-circle"></i>
+          </button>
+          <button onclick="cd()">
+            <i class="fa-solid fa-equals"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
