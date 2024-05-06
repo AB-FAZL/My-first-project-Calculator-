@@ -1,6 +1,6 @@
 body {
-    background       : rgb(65, 1, 125);
-    background       : linear-gradient(13deg, rgba(65, 1, 125, 1) 1%, rgba(92, 1, 169, 1) 57%, rgba(158, 29, 252, 1) 84%, rgba(160, 30, 255, 1) 85%);
+    background       : rgb(0, 0, 0);
+    background       : linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(27, 27, 27, 1) 73%, rgba(33, 33, 33, 1) 100%);
     width            : 100vw;
     height           : 100vh;
     position         : relative;
@@ -12,18 +12,19 @@ body {
 
 
 .Calculator {
-    width             : 30%;
-    height            : 80%;
-    background-color  : #9b00f5;
-    border-radius     : 2em;
-    position          : relative;
+    width          : 30%;
+    height         : 80%;
+    background     : rgb(0, 0, 0);
+    background     : linear-gradient(45deg, rgba(0, 0, 0, 1) 0%, rgba(27, 27, 27, 1) 73%, rgba(33, 33, 33, 1) 100%);
+    border-radius  : 2em;
+    position       : relative;
 }
 
 .frame {
     width             : 100%;
     height            : 20%;
     border-radius     : 2em 2em 0 0;
-    background-color  : #1900ff;
+    background-color  : #24232b;
     display           : flex;
     align-items       : center;
     justify-content   : space-around;
@@ -63,25 +64,24 @@ body {
 
 button {
     width             : 16%;
-    border-radius     : 1em;
+    border-radius     : 99999px;
     border            : none;
-    color             : #31026E;
-    background-color  : #00ffff;
+    color             : #ffffff;
+    background-color  : #262626;
     font-size         : 2em;
+    box-shadow        : 2px 2px 10px rgb(86, 84, 84);
     aspect-ratio      : 1 /1;
 }
 
-button:active {
-    background  : #21014a !important;
-    color       : #00ffff !important;
+button :active {
+    box-shadow  : 2px 2px 10px rgb(86, 84, 84);
 }
 
 #dot {
     font-size      : smaller;
-    border-radius  : 2.5em;
+    border-radius  : 99999em;
 }
 
 button:hover {
-    background-color  : #0c145c;
-    color             : #0d09ff;
+    box-shadow  : none !important;
 }
